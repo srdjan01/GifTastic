@@ -1,0 +1,46 @@
+#background {
+	background-image: url('../images/kittens.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-self: center;
+	background-position: center; 
+	color: #C0C0C0;
+}
+
+div.jFooter {
+	background-color: #4a9700;
+	text-align: center;
+	color: #C0C0C0;
+}
+.button {
+	padding: 10px;
+	border-radius: 6px;
+	padding: 10px 16px;
+    margin-right: 2px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    background-color: : #4a9700;
+    border: 0.5px solid black;
+    border-color: #4a9700;
+    width: 150px;
+}
+
+.button-area{
+	padding: 10px;
+	border-radius: 6px;
+	background-color: #4a9700;
+    padding: 10px 16px;
+    margin-right: 2px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    background-image: none;
+    border: 2px solid black;
+    border-color: #4a9700;
+    width: 150px;
+}
+
+/*#bg {
+	
+	text-align: center;
+    
+}*/

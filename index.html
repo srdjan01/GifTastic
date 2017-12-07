@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Animals</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+    <title>GifTastic</title>
+    
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/css/mystyle.css">
 </head>
+
 <body>
-	<!-- START OF BODY CONTENT -->
-	<div class="jumbotron jBackground">
-	  <h1>Gif Tastic</h1>
-	</div>
-	
-	<h1>Add Animal</h1>
+    <!-- Jumbotron and container -->
+    <div class="jumbotron" id="background">
+        <div class="container-fluid">
+            <div class="jumbotron-header text-center">
+                <h1>Gif Tastic</h1>
+            </div>
+        </div>
+    </div>
 
-    <form id="animal-form">
-      <label for="animal-input"></label>
-      <input type="text" id="animal-input">
+    <!-- Button Panel -->
+    <div class="container-fluid">
+        <div class="form-group">
+            <!-- Input form with place holder -->
+            <input type="text" class="form-control input-generate" placeholder="What is your favor animal?">
+        </div>
+        <!-- Added submit giph button -->
+        <button data-input type="button" class="btn btn-primary" id="gifAddBtn" data-target="#button-area">Submit</button>
+        <!--Added clear button clear last added item -->
+        <button class="btn btn-warning clear-btn" id="clearBtn">Clear</button>
+        <br>
+        <!--Panel with where buttons will be created -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <div class="panel panel-success" id= "bg">
+                 <!--    <div class="panel-heading"> -->
+                    <h3 class="panel-title"><b>Click on button to activate Giphy magic!</b></h3>
+                
+                    <!-- </div> -->
+                    <!-- Button dump created button and displays existing buttons from array-->
+                    <div class="">
+                        <br>            
+                        <div id="button-area">
+                        </div>
+                    </div >
+                </div>
+            </div>
+            <br>
 
-      <!-- Button triggers animal to be added -->
-      <input id="add-animal" type="submit" value="Click to Add">
-    </form>
+            <!-- Gif Panel -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 main">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"></h3>
+                        </div>
+                        <!-- <h7>Click on an image to play or pause it!</h7> -->
+                        <div class="row placeholders" id="gif-content"></div>
+                    </div>
+                </div>
+            </div>    
 
-	<br>
-	<!-- Buttons will Get Created at here -->
-    <div id="buttons-view"></div>
+            <!-- Footer -->
+            <div class="jumbotron jFooter">
+              <h5>Srdjan Markovich &copy; Copyright 2017</h5>
+          </div>
 
+          <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+          <script src="css/javascript/logic.js"></script>
+      </body>
 
-	</div>
-	<br>
-	<div class="jumbotron jFooter">
-	  <h5>Srdjan Markovich &copy; Copyright 2017</h5>
-	</div>
-	<!-- END OF BODY CONTENT -->
-
-	<!-- SCRIPTS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="assets/javascript/app.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
-</html>
-
-
+      </html>
